@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <title>Countries</title>
+
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="./assets/img/location.png" />
+    <link rel="icon" href="./assets/img/location.png" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/main.css.map" />
+
+    <!-- aos.js library load-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="/app/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header_title">
+            <span class="fa fa-map-marker"></span>
+            <h1>Countries of all continents</h1>
+        </div>
+        <!-- / title -->
+
+    </header>
+    <!-- / header -->
+   
+
+    <div class="content">
+
+        <div class="continent">
+            <span class="fa fa-arrow-left" id="prev"></span>
+            <div class="name"></div>
+            <span class="fa fa-arrow-right" id="next"></span>
+        </div>
+        <!-- / continent_title -->
+
+        <div class="searchbox">
+            <form action="">
+                <label for="search">¡Here you can search any country! (Be careful, it is uppercase sensitive)</label>
+
+                <div class="search">
+                    <span class="fa fa-search"></span>
+                    <input type="text" id="search" placeholder="...">
+                </div>
+            </form>
+        </div>
+        <!-- / searchbox -->
+
+        <ul class="country"></ul>
+        <!-- / country -->
+
+    </div>
+    <!-- / content -->
+
+</body>
+
+</html>

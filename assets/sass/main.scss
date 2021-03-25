@@ -1,0 +1,205 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+
+
+* {
+  // border: 1px solid pink;
+}
+
+body {
+  background-color: $primary_light;
+}
+
+header {
+  padding: 2.5rem 0 1rem 2.5rem;
+
+  .header_title {
+
+    span {
+      color: $primary_color;
+      font-size: 2.5rem;
+    }
+
+    h1 {
+      color: $primary_dark;
+    }
+  }
+}
+
+
+
+.content {
+
+  .continent {
+    padding: 0 0 1.5rem 2.5rem;
+
+    display: flex;
+    align-items: center;
+
+    .fa-arrow-left {
+      color: $primary_dark;
+
+      margin-right: 2rem;
+      cursor: pointer;
+    }
+
+    .name {
+  
+      .continent_title {
+        color: $primary_dark;
+        font-size: 2rem;
+      }
+    }
+
+    .fa-arrow-right {
+      color: $primary_dark;
+
+      margin-left: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  .searchbox {
+    padding: 0 0 3.5rem 2.5rem;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        color: $primary_color;
+      }
+
+      .search {
+        padding: .5rem;
+
+        background-color: white;
+        border-radius: 10px;
+
+        max-width: 50%;
+
+        span {
+          color: $primary_color;
+        }
+
+        #search {
+          width: 90%;
+          border: none;
+
+          margin-left: .5em;
+
+          color: $primary_color;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  .country {
+    display: grid;
+    grid-template-columns: auto auto;
+  
+    .item {
+      list-style: none;
+  
+      width: 500px;
+      height: auto;
+  
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 8px;
+  
+      margin-bottom: 2rem;
+    
+      .top_info {
+        display: flex;
+        justify-content: space-between;
+  
+        padding-bottom: 2.5rem;
+        
+        .left_info {
+  
+          .region_name {
+            font-size: 1.5rem;
+            color: $primary_dark;
+  
+            margin-bottom: 1rem;
+          }
+  
+          .capital {
+            color: $primary_color;
+          }
+  
+          .country {
+            color: $primary_color;
+  
+            font-size: .75rem;
+  
+            margin-top: .5rem;
+          }
+        }
+  
+        .right_info {
+          width: 200px;
+          height: 100px;
+  
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+  
+      .bottom_info {
+        display: flex;
+        justify-content: space-between;
+  
+        padding: .5rem;
+        background-color: $primary_color;
+        border-radius: 6px;
+  
+        .population {
+          color: white;
+  
+          span {
+            margin-right: .5rem;
+          }
+        }
+  
+        .language {
+          color: white;
+  
+          span {
+            margin-right: .5rem;
+          }
+        }
+  
+        .currencies {
+          display: flex;
+          justify-content: space-between;
+  
+          .currency_symbol {
+            color: white;
+  
+            font-weight: 600;
+  
+            margin-right: .5rem;
+          }
+  
+          .currency_name {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
